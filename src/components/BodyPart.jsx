@@ -19,7 +19,10 @@ export default function BodyPart({item, bodyPart, setBodyPart}){
                 cursor:'pointer',
                 gap:'47px'
           }}
-          onClick={()=>setBodyPart(item)}
+          onClick={
+            ()=>{setBodyPart(item)
+            window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })}
+          }
           
         >
           <img src={Icon} alt="dumbbell" style={{
